@@ -22,11 +22,11 @@ export const habilidades: Habilidade[] = [
   {
     id: 3,
     nome: "Estrutura de dados",
-    nivel: "intermediário",
+    nivel: "básico",
   },
   {
     id: 4,
-    nome: "Javascript e Typscript",
+    nome: "Javascript e TypeScript",
     nivel: "intermediário",
   },
 ];
@@ -35,9 +35,9 @@ export const projetos: Projeto[] = [
   {
     id: 1,
     titulo: "Meu portfólio",
-    descricao: "Página pessoal feita com React, Typescript e Tailwind.",
-    tecnologias: ["React", "Typescript", "Tailwind"],
+    descricao: "Página pessoal feita com React, TypeScript e Tailwind.",
+    tecnologias: ["React", "TypeScript", "Tailwind"],
     emAndamento: true,
-    link: "https://github.com/brenoGoya/meu-portfólio",
+    link: "https://github.com/brenoGoya/meu-portfolio",
   },
 ];
