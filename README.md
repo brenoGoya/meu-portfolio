@@ -1,32 +1,39 @@
-# React + TypeScript + Vite
+# Meu Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Página de apresentação pessoal desenvolvida na disciplina Tecnologias para
+Interfaces de Aplicações Web (IFTM), como parte da Atividade 1.
 
-Currently, two official plugins are available:
+## Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS v4
 
-## React Compiler
+## Como executar
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+    npm install
+    npm run dev
 
-## Expanding the Oxlint configuration
+Acesse http://localhost:5173 no navegador.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Estrutura
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+    src/
+    ├── components/   componentes da interface
+    ├── types.ts      tipos Perfil, Habilidade e Projeto
+    ├── dados.ts      conteúdo do portfólio
+    └── App.tsx       composição da página
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Componentes
+
+- **Cabecalho**: exibe foto, nome, curso e links; o LinkedIn aparece somente se informado.
+- **Painel**: contêiner de seção que recebe título e conteúdo via `children`.
+- **ListaHabilidades**: renderiza as habilidades com `.map()` e exibe o nível de cada uma.
+- **CardProjeto**: card de projeto com selo condicional "em andamento" e link exibido apenas quando existe.
+- **Contato**: links de e-mail (`mailto:`) e GitHub.
+- **Rodape**: exibe o ano atual, calculado em tempo de execução, e o nome do autor.
+
+## Autor
+
+Breno Goya — Análise e Desenvolvimento de Sistemas
