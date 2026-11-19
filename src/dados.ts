@@ -6,12 +6,13 @@ export const perfil: Perfil = {
   periodo: 2,
   email: "breno.goya@gmail.com",
   github: "https://github.com/brenoGoya",
+  avatarUrl: "https://github.com/brenoGoya.png",
 };
 
 export const habilidades: Habilidade[] = [
   {
     id: 1,
-    nome: "Html e CSS",
+    nome: "HTML e CSS",
     nivel: "intermediário",
   },
   {
@@ -26,7 +27,7 @@ export const habilidades: Habilidade[] = [
   },
   {
     id: 4,
-    nome: "Javascript e TypeScript",
+    nome: "JavaScript e TypeScript",
     nivel: "intermediário",
   },
 ];
@@ -39,5 +40,12 @@ export const projetos: Projeto[] = [
     tecnologias: ["React", "TypeScript", "Tailwind"],
     emAndamento: true,
     link: "https://github.com/brenoGoya/meu-portfolio",
+  },
+  {
+    id: 2,
+    titulo: "Controle de gastos pessoais",
+    descricao: "Em construção.",
+    tecnologias: ["React", "TypeScript", "Tailwind"],
+    emAndamento: true,
   },
 ];
