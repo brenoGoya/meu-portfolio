@@ -2,7 +2,9 @@ import { Cabecalho } from "./components/Cabecalho";
 import { Contato } from "./components/Contato";
 import { Rodape } from "./components/Rodape";
 import { Painel } from "./components/Painel";
-import { perfil } from "./dados";
+import { habilidades, perfil, projetos } from "./dados";
+import { ListaHabilidades } from "./components/ListaHabilidades";
+import { CardProjeto } from "./components/CardProjeto";
 
 export default function App() {
   return (
@@ -14,6 +16,16 @@ export default function App() {
             Engenheiro Agrônomo e estudante de Análise e desenvolvimenteo de
             Sistemas
           </p>
+        </Painel>
+        <Painel titulo="Habilidades">
+          <ListaHabilidades habilidades={habilidades} />
+        </Painel>
+        <Painel titulo="Projetos">
+          <div className="grid gap-4 sm:grid-cols-2">
+            {projetos.map((p) => (
+              <CardProjeto key={p.id} projeto={p} />
+            ))}
+          </div>
         </Painel>
         <Painel titulo="Contato">
           <Contato perfil={perfil} />
